@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* nav styles */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: rgb(5, 5, 116);
+  padding-left: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.nav__link {
+  position: fixed;
+  width: 90%;
+  top: 5rem;
+  left: 18px;
+  border-radius: 20px;
+  background-color: rgb(135, 139, 139);
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav__link a span{
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(135, 139, 139);
+  border-radius: 25px;
+}
+
+.nav__link a span:hover{
+  box-shadow:  0px 1px 10px rgba(0, 0, 0, 0.74);
+  color: white;
+  font-size: medium;
+  padding: 13px 13px;
+}
+
+
+.nav__link a:hover {
+  color: rgb(87, 64, 64);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
